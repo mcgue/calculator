@@ -1,6 +1,6 @@
 # Graphical Calculator with Python and tkinter
 
-from tkinter import *
+import tkinter as tk
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -9,9 +9,10 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    gui = Tk()
-    gui.configure(background="light green")
-    gui.geometry("270x150")
+    gui = tk.Tk()
+    # gui.configure(background="light green")
+    # gui.geometry("270x150")
+    gui.mainloop()
 
 
 
