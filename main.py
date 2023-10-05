@@ -10,8 +10,8 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     gui = Tk()
-    gui.configure(background="light green")
-    gui.geometry("270x150")
+    gui.configure(background="light blue")
+    gui.geometry("400x450")
     gui.title("CALCULATOR")
     gui.mainloop()
 
