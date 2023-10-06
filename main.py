@@ -1,4 +1,5 @@
 # Graphical Calculator with Python and tkinter
+# To do - add ico
 
 from tkinter import *
 
@@ -12,16 +13,16 @@ if __name__ == '__main__':
     # Create and configure window for calculator
     calc_gui = Tk()
     calc_gui.configure(background="light blue")
-    calc_gui.geometry("400x450")
+    calc_gui.geometry("400x450+50+50")
     calc_gui.title("CALCULATOR")
 
     # Create instance of StringVar()
     string_variable = StringVar(calc_gui, "Let's go!!")
 
-    # Create data entry box
+   # Create field to show equation
     expression_field = Entry(calc_gui, textvariable=string_variable)
 
-    expression_field.grid(columnspan=4, ipadx=70)
+    expression_field.grid(columnspan=100, padx=10, pady = 10)
 
     # Start up the gui
     calc_gui.mainloop()
