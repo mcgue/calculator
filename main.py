@@ -1,5 +1,7 @@
-# Graphical Calculator with Python and tkinter
+# Calculator with Python tkinter
 # To do - add ico
+
+# test to make sure git working
 
 from tkinter import *
 
@@ -26,7 +28,3 @@ if __name__ == '__main__':
 
     # Start up the gui
     calc_gui.mainloop()
-
-
-
-
