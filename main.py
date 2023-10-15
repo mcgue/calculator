@@ -1,7 +1,4 @@
-# Calculator with Python tkinter
-# To do - add ico
-
-# test to make sure git working
+# Calculator with tkinter
 
 from tkinter import *
 
@@ -17,6 +14,7 @@ if __name__ == '__main__':
     calc_gui.configure(background="light blue")
     calc_gui.geometry("400x450+50+50")
     calc_gui.title("CALCULATOR")
+    calc_gui.resizable(0,0)
 
     # Create instance of StringVar()
     string_variable = StringVar(calc_gui, "Let's go!!")
