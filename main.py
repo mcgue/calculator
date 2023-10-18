@@ -1,10 +1,15 @@
 # Calculator with tkinter
 
 from tkinter import *
+from tkinter import messagebox
 
-def print_hi(name):
-    # remove this?
-    print(f'Hi, {name}')
+# Function to evaluate the expression
+def evaluate_expression():
+    try:
+        result = eval(expression.get())
+        expression.set(str(result))  # Update expression with the result
+    except Exception as e:
+        messagebox.showerror("Error", "Invalid expression")
 
 
 # Press the green button in the gutter to run the script.
