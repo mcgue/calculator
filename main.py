@@ -11,6 +11,10 @@ def evaluate_expression():
     except Exception as e:
         messagebox.showerror("Error", "Invalid expression")
 
+# Function to update the expression when a button is clicked
+def update_expression(value):
+    current_expression = expression.get()
+    expression.set(current_expression + str(value))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
