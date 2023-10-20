@@ -25,13 +25,14 @@ if __name__ == '__main__':
     calc_gui.title("CALCULATOR")
     calc_gui.resizable(0,0)
 
-    # Create instance of StringVar()
-    string_variable = StringVar(calc_gui, "Let's go!!")
+    # Instance of StringVar() for entry field
+    string_variable = StringVar()
 
-   # Create field to show equation
-    expression_field = Entry(calc_gui, textvariable=string_variable)
+   # Entry field
+    expression_field = Entry(calc_gui, textvariable=string_variable,
+        font=("open sans", 24), bd=5, insertwidth=1, width=20)
 
-    expression_field.grid(columnspan=100, padx=10, pady = 10)
+    expression_field.grid(row=0, column=0, columnspan=3)
 
     # Start up the gui
     calc_gui.mainloop()
