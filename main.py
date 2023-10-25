@@ -30,9 +30,9 @@ if __name__ == '__main__':
 
    # Entry field
     expression_field = Entry(calc_gui, textvariable=string_variable,
-        font=("open sans", 24), bd=5, insertwidth=1, width=20)
+        font=("open sans", 24), bd=5, insertwidth=1, width=15)
 
-    expression_field.grid(row=0, column=0, columnspan=3)
+    expression_field.grid(row=0, column=0, columnspan=3, padx = 10, pady = 10)
 
     # Start up the gui
     calc_gui.mainloop()
