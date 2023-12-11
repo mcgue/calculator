@@ -1,3 +1,3 @@
 # calculator
-## Creates gui calculator
-### Status: in progress
+Creates gui calculator<br>
+Status: in progress
